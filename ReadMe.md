@@ -1,5 +1,11 @@
 
 # Android Technical Assessment, Alup.
+# How to run the project
+1. Clone the project to a local repository
+2. Download android studio from https://developer.android.com/studio and install all required plugins.
+3. Open the folder cloned to, then let the project sync.
+4. Connect a physical device or create an emulator and run the project.
+5. Task 2, is done on a jira board, access has been given to peter@pula.io
 # Question 1.
 ## Problem Statement.
 Kenyan Farmers often suffer losses or low farm yields due to a diverse range of catastrophies, this may range from floods, drought, etc. This affects millions of families essentially due to lack of farm insurance for the small scale farmer.
@@ -17,8 +23,6 @@ More insurance providers will promote healthy competition, this in. turn will se
 ## Source code git repository
 https://github.com/augustus-mutinda/io.alup.mobile.git
 ## Illustration
-[]: # Path: IMG_20230306_181215.jpg
-[]: # Path: IMG_20230306_181223.jpg
 ## Task's break down
 I have invited peter@pula.io to an atlassian site, and should have access to this jira site, https://alup.atlassian.net/jira/software/c/projects/AM/boards/1. This board has a breakdown on various tasks assigned to various members of the team. The senior engineer take on the heavier tasks while the 2 mid level engineers take up UI tasks, working along side each other. The Junior is tasked with remedial tasks and shadowing the mid level engineers such as UI tests, SITs, UATs and Git set Up.
 Preparation to production is done by the senior engineer. The time line is 4 weeks to production, leaving 2 weeks for a pilot phase where any issues can be fixed.
