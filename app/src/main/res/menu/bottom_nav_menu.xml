@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/home_roof"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/myPoliciesFragment"
+        android:icon="@drawable/line_chart_dots"
+        android:title="@string/my_policies" />
+
+    <item
+        android:id="@+id/myPayoutsFragment"
+        android:icon="@drawable/flash_outline"
+        android:title="@string/payouts" />
+
+    <item
+        android:id="@+id/notificationsFragment2"
+        android:icon="@drawable/bell_notification"
+        android:title="@string/notifications" />
+
+    <item
+        android:id="@+id/myProfileFragment2"
+        android:icon="@drawable/user_ninja_solid"
+        android:title="@string/my_profile" />
+
+</menu>

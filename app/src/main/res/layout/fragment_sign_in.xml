@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fade_background">
+
+    <LinearLayout
+        android:id="@+id/ll_loaded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_72sdp"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            android:src="@mipmap/ic_wide" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/Text.Regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="@string/please_enter_a_valid_phone_number_to_continue" />
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:autofillHints="phone"
+            android:background="@drawable/bg_background_alt"
+            android:gravity="center"
+            android:hint="@string/_0712345678"
+            android:inputType="phone"
+            android:padding="8dp"
+            android:textAppearance="@style/Text.Bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            style="@style/Text.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/bg_primary"
+            android:gravity="center"
+            android:text="@string/log_in"
+            android:textColor="@color/color_on_primary" />
+
+        <LinearLayout
+            android:id="@+id/llProgress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/bg_primary"
+            android:gravity="center">
+
+            <ProgressBar
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:indeterminateTint="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_register"
+            style="@style/Text.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_48sdp"
+            android:background="@drawable/bg_secondary"
+            android:gravity="center"
+            android:padding="@dimen/_12sdp"
+            android:text="@string/create_account"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

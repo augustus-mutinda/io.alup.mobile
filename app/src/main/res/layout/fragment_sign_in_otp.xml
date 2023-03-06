@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fade_background">
+
+    <LinearLayout
+        android:id="@+id/ll_loaded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewClose"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:src="@drawable/arrow_back_outline" />
+
+            <TextView
+                style="@style/Text.Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/verify_phone_with_otp" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@string/app_name"
+                android:padding="10dp"
+                android:src="@drawable/arrow_back_outline"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_64sdp"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            android:src="@mipmap/ic_wide" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_otp_sent"
+            style="@style/Text.Regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="@string/we_ve_sent_you_an_otp_please_enter_it" />
+
+        <EditText
+            android:id="@+id/editTextOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:autofillHints="none"
+            android:background="@drawable/bg_background_alt"
+            android:gravity="center"
+            android:hint="@string/_000000"
+            android:inputType="number"
+            android:letterSpacing="0.6"
+            android:padding="@dimen/_8sdp"
+            android:textAppearance="@style/Text.Medium"
+            android:textSize="@dimen/_24sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/verify"
+            style="@style/Text.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/bg_primary"
+            android:gravity="center"
+            android:text="@string/continue_to_verify"
+            android:textColor="@color/color_on_primary" />
+
+        <LinearLayout
+            android:id="@+id/verify_loading"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_primary"
+            android:gravity="center">
+
+            <ProgressBar
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:indeterminateTint="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/resend_placeholder"
+            style="@style/Text.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/bg_primary"
+            android:gravity="center"
+            android:text="@string/resend_otp"
+            android:textColor="@color/color_on_primary" />
+
+        <TextView
+            android:id="@+id/resend"
+            style="@style/Text.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/bg_primary"
+            android:gravity="center"
+            android:text="@string/resend_otp"
+            android:textColor="@color/color_on_primary" />
+
+        <LinearLayout
+            android:id="@+id/resend_loading"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_margin="8dp"
+            android:background="@drawable/bg_primary"
+            android:gravity="center">
+
+            <ProgressBar
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:indeterminateTint="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

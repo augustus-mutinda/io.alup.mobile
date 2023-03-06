@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fade_background">
+
+    <LinearLayout
+        android:id="@+id/ll_loaded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:autofillHints="phone"
+            android:background="@drawable/bg_background_alt"
+            android:gravity="center"
+            android:hint="@string/farm_name"
+            android:inputType="text"
+            android:padding="@dimen/_8sdp"
+            android:textAppearance="@style/Text.Bold" />
+
+        <EditText
+            android:id="@+id/et_acreage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:autofillHints="phone"
+            android:background="@drawable/bg_background_alt"
+            android:gravity="center"
+            android:hint="@string/number_of_acres"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/_8sdp"
+            android:textAppearance="@style/Text.Bold" />
+
+        <EditText
+            android:id="@+id/et_value_chain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:autofillHints="phone"
+            android:background="@drawable/bg_background_alt"
+            android:gravity="center"
+            android:hint="@string/valuechain_rice_maize_etc"
+            android:inputType="text"
+            android:padding="@dimen/_8sdp"
+            android:textAppearance="@style/Text.Bold" />
+
+        <EditText
+            android:id="@+id/et_seasons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:autofillHints="phone"
+            android:background="@drawable/bg_background_alt"
+            android:gravity="center"
+            android:hint="@string/number_of_seasons_per_year"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/_8sdp"
+            android:textAppearance="@style/Text.Bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/create"
+            style="@style/Text.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/bg_primary"
+            android:gravity="center"
+            android:text="@string/apply_for_insurance"
+            android:textColor="@color/color_on_primary" />
+
+        <LinearLayout
+            android:id="@+id/ll_loading"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:visibility="gone"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/bg_primary"
+            android:gravity="center">
+
+            <ProgressBar
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:indeterminateTint="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

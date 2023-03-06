@@ -1,0 +1,56 @@
+<resources>
+
+    <style name="Text" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_on_background</item>
+        <item name="fontFamily">@font/regular</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Text.Small" parent="Text">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Text.Small.BottomNavBar">
+        <item name="fontFamily">@font/medium</item>
+    </style>
+
+    <style name="Text.Small.BottomNavBar.Active">
+        <item name="fontFamily">@font/medium</item>
+    </style>
+
+    <style name="Text.Small.Italic" parent="Text.Small">
+        <item name="fontFamily">@font/regular_italic</item>
+    </style>
+
+    <style name="Text.Regular" parent="Text">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Text.Regular.Italic" parent="Text.Regular">
+        <item name="fontFamily">@font/regular_italic</item>
+    </style>
+
+    <style name="Text.Medium" parent="Text">
+        <item name="fontFamily">@font/medium</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Text.Title" parent="Text">
+        <item name="fontFamily">@font/medium</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/color_gray</item>
+    </style>
+
+    <style name="Text.Medium.Italic" parent="Text.Medium">
+        <item name="fontFamily">@font/medium_italic</item>
+    </style>
+
+    <style name="Text.Bold" parent="Text">
+        <item name="fontFamily">@font/bold</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Text.Bold.Italic" parent="Text.Bold">
+        <item name="fontFamily">@font/bold_italic</item>
+    </style>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_alt_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/bg_primary" />
+
+    <TextView
+        style="@style/Text.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:text="@string/you_are_about_to_sign_out" />
+
+    <TextView
+        style="@style/Text.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/you_will_need_to_sign_in_again_to_use_alup" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_sign_out"
+            style="@style/Button.Primary"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:text="@string/sign_out" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/Button.Secondary"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_weight="1"
+            android:text="@string/stay_signed_in" />
+    </LinearLayout>
+
+</LinearLayout>
